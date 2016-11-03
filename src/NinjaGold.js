@@ -21,6 +21,8 @@ var App = React.createClass({
 		});
 		return (
 			<div className='app'>
+				<h3>Local Time:</h3>
+				<p>{new Date().toLocaleTimeString()}</p>
 				<GoldDisplay gold={this.state.gold}/>
 				<div className='location-container'>
 					{goldSources}
